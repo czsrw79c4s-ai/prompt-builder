@@ -1,3 +1,4 @@
+alert("script loaded");
 const pages = [
 {
     title: "Model",
