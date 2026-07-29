@@ -1,43 +1,97 @@
-body{
+*{
+    box-sizing:border-box;
     margin:0;
+    padding:0;
+}
+
+body{
+
     font-family:sans-serif;
-    background:#eef7ff;
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
 
-.container{
-    max-width:700px;
-    margin:auto;
-    padding:30px;
+#app{
+
+    width:min(700px,95%);
+
 }
 
-h1{
-    text-align:center;
-}
-
-button{
-    width:100%;
-    padding:16px;
-    margin-top:20px;
-
-    font-size:20px;
-
-    border:none;
-    border-radius:16px;
-
-    cursor:pointer;
-}
-
-#promptBox{
-
-    margin-top:30px;
+.card{
 
     background:white;
 
-    border-radius:16px;
+    border-radius:18px;
 
-    padding:20px;
+    padding:30px;
 
-    min-height:120px;
+}
 
-    font-size:18px;
+h1{
+
+    margin-bottom:10px;
+
+}
+
+h2{
+
+    margin-bottom:25px;
+
+}
+
+.option{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+.option.selected{
+
+    border:2px solid #4a7cff;
+
+}
+
+.bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:30px;
+
+}
+
+button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
 }
